@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   {{>headerlinks}}
+
+</head>
+
+<body>
+    {{!-- using partials --}}
+      {{>navbar}} 
+
+    <!-- header section -->
+
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="row">
+                        <!-- left side div -->
+                    <div class="col-md-6 col-12 main_header_right align-items-center">
+
+                        <figure>
+                           <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaySadYExKl-hH4Nq7YccFY2VsrmYC47XvHko4v90_am7cdRiz6--kl88eUr5eq7FmjfQ&usqp=CAU" alt="clouds"class="img-fluid" title="Parul-Saini">
+                        </figure>
+
+                   </div>
+                  
+                     <!--right side div from bootstrap carouse -->
+                    <div class="col-md-6 col-12 main_header_left">
+                        <p>Hello, My self <b>Parul-Saini.</b></p>
+                        <h1>I am a<span> Web developer  </span>who loves to design the web pages.I'm pursuing B-Tech in Computer Science and Engineering with current grade point of 9.65 . Currently I'm working on MERN stack but also want to explore my potential in <span>Blockchain development</span>.</h1>
+                        <!-- <a href="/portfolio" target="_parul"> <button>About me</button> </a> -->
+                    </div>
+
+                   
+                   
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    
+
+
+    <!-- footer section -->
+   {{>footer}}
+
+
+</body>
+
+
+<script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</html>

@@ -1,0 +1,19 @@
+{
+  "name": "project_website",
+  "version": "1.0.0",
+  "description": "this is weather wesbite where you can get info about current weather of your city",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "weather",
+    "website"
+  ],
+  "author": "parul",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "hbs": "^4.2.0"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head> 
+    {{>headerlinks}}
+    <style>
+        body{
+        
+         background:url("https://media.istockphoto.com/illustrations/abstract-kawaii-clouds-cartoon-on-blue-sky-with-snow-background-for-illustration-id1194631800?k=20&m=1194631800&s=170667a&w=0&h=3PygU9x1NdF6P0VMKW7au1lZWsYeYosKqePRla3B35E=") no-repeat center center /cover;
+        }
+     </style>
+
+</head>
+
+<body>
+    
+     {{>navbar}}
+
+    <!-- header section -->
+
+    <div class="container-fluid main-header">
+        <div class="row">
+            <div class="col-md-10 col-12 mx-auto">
+
+                <div class="main-content">
+                    <form action="" class="temp_form">
+                        <input type="text" id="cityname" placeholder="Enter  city name" autocomplete="off">
+                        <input type="submit" value="Search" id="submitbtn">
+                    </form>
+                </div>
+
+                <div class="tempInformation">
+                    <div class="top-layer">
+                        <p id="day">Tuesday</p>
+                        <p id="today_date">9aug</p>
+                    </div>
+                    <div class="main-layer">
+                        <p id="city-name-display">City Name</p>
+
+                        <div class="middle-layer data-hide">
+                            <p id="temperature">
+                                <span id="temp_real_value">0</span> <sup>0</sup>C
+                            </p>
+                            <p id="temp_image">
+                                <i class="fa fa-cloud"></i>
+                            </p>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+    
+     {{>footer}} 
+
+
+</body>
+
+
+<script src="js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</html>

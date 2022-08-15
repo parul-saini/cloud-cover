@@ -4,7 +4,8 @@
   "description": "this is weather wesbite where you can get info about current weather of your city",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node src/app.js"
   },
   "keywords": [
     "weather",

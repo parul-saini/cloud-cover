@@ -2,8 +2,8 @@ const express =require("express");
 const path =require("path");
 const app =express();
 const hbs =require("hbs");
-const port = 8080; 
-// const port = process.env.PORT || 8080; //for hosting we have to consider it 
+// const port = 8080; 
+const port = process.env.PORT || 8080; //for hosting we have to consider it 
 
 
 

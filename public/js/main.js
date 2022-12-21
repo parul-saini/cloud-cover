@@ -27,16 +27,18 @@ const getinfo =async (event)=>{
     {
         // use try catch if serach fiels is wrong 
         try {
-            let url =`https://api.openweathermap.org/data/2.5/weather?q=${city_value}&units=metrics&appid=b36cefc76fbf5367bf2e77325c001a34`;
+            let url =`https://api.openweathermap.org/data/2.5/weather?q=${city_value}&lang=en&units=metric&appid=b36cefc76fbf5367bf2e77325c001a34`;
             const response =  await fetch(url);
             let data =  await response.json();
             const arrdata= [data];
-            console.log(arrdata); 
+            // console.log(arrdata); 
 
             city_display.innerText=`${arrdata[0].name} ,${arrdata[0].sys.country}`;
 
             //temp is in float value so to slice it after convert it into string 
-            let tempval= Math.ceil(arrdata[0].main.temp); tempval=tempval.toString().slice(0,2);
+            // let tempval= Math.ceil(arrdata[0].main.temp); 
+            let tempval= arrdata[0].main.temp; 
+            tempval=tempval.toString().slice(0,4);
            
             temp.innerHTML =`${tempval} <sup>0</sup>C`;
             

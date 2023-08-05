@@ -8,11 +8,12 @@ const port = process.env.PORT || 8000; //for hosting we have to consider it
 
 
 // public files path 
-const staticFilePath = path.join(__dirname,"../public");
+// console.log(path.join(__dirname,"./public"));
+const staticFilePath = path.join(__dirname,"./assets");
 
-const templteFile_Path = path.join(__dirname,"../templates/views");
+const templteFile_Path = path.join(__dirname,"./templates/views");
 
-const partials_path = path.join(__dirname,"../templates/partials");
+const partials_path = path.join(__dirname,"./templates/partials");
 
 
 

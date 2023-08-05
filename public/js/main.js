@@ -15,17 +15,16 @@ const getinfo =async (event)=>{
     // it is used to stop thge from reloading 
     event.preventDefault();
     let city_value = cityName.value;
-    
 
    if(city_value === ""){
     // if input filed  is empty 
-    city_display.innerText="Please write the city name : ) ";
+    city_display.innerText="Please write the city name:)";
     data_hide.classList.add('data-hide');
     
    }
     else
     {
-        // use try catch if serach fiels is wrong 
+        // use try catch if serach fields is wrong 
         try {
             let url =`https://api.openweathermap.org/data/2.5/weather?q=${city_value}&lang=en&units=metric&appid=b36cefc76fbf5367bf2e77325c001a34`;
             const response =  await fetch(url);
@@ -51,10 +50,10 @@ const getinfo =async (event)=>{
                 temp_image.innerHTML= ` <i class="fas fa-cloud" style='color:#9dace6'></i>`;
              }
              else if(tempimage=="Rain"){
-                temp_image.innerHTML= ` <i class="fas fa-cloud-rain" style='color:#a4b0be'></i>`;
+                temp_image.innerHTML= `<i class="fas fa-cloud-rain" style='color:#a4b0be'></i>`;
             }
              else{
-                temp_image.innerHTML= ` <i class="fas fa-sun" style='color:#d5b450'></i>`;
+                temp_image.innerHTML= `<i class="fas fa-sun" style='color:#d5b450'></i>`;
             }
 
 
